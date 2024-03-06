@@ -1,5 +1,5 @@
 text = input()
-text = text.replace(" ", "")
+text = text.replace(" ", "").lower()
 reverse = text[::-1]
 flag = True
 for x in range(len(text)):
