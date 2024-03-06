@@ -1,0 +1,6 @@
+text = input("Type sentence ")
+text = text.replace("o", "0")
+text = text.replace("e", "3")
+text = text.replace("i", "1")
+text = text.replace("a", "4")
+print(text)
