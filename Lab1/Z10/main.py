@@ -11,6 +11,7 @@ while con:
         print("Za mała")
         counter += 1
     else:
+        counter += 1
         con = False
 
 print("Wygrałeś!")
