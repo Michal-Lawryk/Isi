@@ -1,2 +1,8 @@
 from bs4 import BeautifulSoup
-soup = BeautifulSoup("https://amw.gdynia.pl/index.php", "lxml")
+
+with open('index.html') as fp:
+    soup = BeautifulSoup(fp, features="lxml")
+    links = []
+    for link in soup.find_all('a'):
+        links.append(link.get('href'))
+    print(links)
