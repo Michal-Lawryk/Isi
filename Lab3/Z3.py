@@ -35,3 +35,5 @@ querry = conn.execute('SELECT Imie, Nazwisko, AVG(wartosc) FROM student, ocena W
                       'student.Nr_albumu=ocena.Nr_albumu GROUP BY student.Nr_albumu')
 for x in querry:
     print(x)
+
+conn.close()
